@@ -24,7 +24,7 @@
 # (Detailed instructions below variables)
 #=====================================================================
 #set -x
-CONFIGFILE="/etc/automysqlbackup/automysqlbackup.conf"
+CONFIGFILE="/usr/local/etc/automysqlbackup/automysqlbackup.conf"
 
 if [ -r ${CONFIGFILE} ]; then
 	# Read the configfile if it's existing and readable
