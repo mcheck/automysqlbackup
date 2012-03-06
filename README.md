@@ -2,19 +2,35 @@ AutoMySQLBackup
 ===============
 A fork of the AutoMySQLBackup script from   http://sourceforge.net/projects/automysqlbackup/
 
-
 There is no error checking on the install script.  
-Run it multiple times and it will overwrite the files that are there.
+Run it multiple times and it will overwrite files that are there.
 
-Grant privileges SHOW DATABASES, SELECT, LOCK TABLES, RELOAD on *.* to 'backup'@'localhost' identified by 'someawesomepassword';
 
 Install
 -------
+
+Setup a mysql backup user:  
+Grant privileges SHOW DATABASES, SELECT, LOCK TABLES, RELOAD on *.* to 'backup'@'localhost' identified by 'someawesomepassword';
 
 Run the installer, it will ask for sudo password
 Installs into
 	/usr/local/bin/automysqlbackup.sh
 	/usr/local/etc/automysqlbackup/automysqlbackup.conf
+
+Adjust settings in automysqlbackup.conf
+
+
+Notes
+-----
+launchd plist is runs daily at 11:50pm
+
+
+
+Todo
+----
+Update the mysql-post script to set permissions on the databases, less permissive
+
+
 
 
 Change Log
