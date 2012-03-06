@@ -20,6 +20,9 @@ sudo chmod 760 $DESTDIR/etc/automysqlbackup/automysqlbackup.conf
 # Move the mysql-post install script into place
 # Make sure it works first.
 
+# TODO Move the PATH script from the binary exec into the conf file.
+# Determine if mail can be disabled all together
+
 # Move the launchd interval script into place, change the permissions
 # Perhaps the RunAtLoad is not needed?
 sudo cp $CURRDIR/com.sologroup.automysqlbackup.plist /Library/LaunchDaemons/

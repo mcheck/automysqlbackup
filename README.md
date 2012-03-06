@@ -18,6 +18,8 @@ Installs into
 	/usr/local/etc/automysqlbackup/automysqlbackup.conf
 
 Adjust settings in automysqlbackup.conf
+Start the launchd plist running: 
+sudo launchctl load /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
 
 
 Notes
@@ -29,7 +31,6 @@ launchd plist is runs daily at 11:50pm
 Todo
 ----
 Update the mysql-post script to set permissions on the databases, less permissive
-
 
 
 
