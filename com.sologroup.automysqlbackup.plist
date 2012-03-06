@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sologroup.automysqlbackup</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/automysqlbackup.sh</string>
+	</array>
+	<key>QueueDirectories</key>
+	<array/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>23</integer>
+		<key>Minute</key>
+		<integer>00</integer>
+	</dict>
+	<key>WatchPaths</key>
+	<array/>
+	<key>UserName</key>
+	<string>root</string>
+</dict>
+</plist>

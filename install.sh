@@ -16,3 +16,11 @@ sudo cp $CURRDIR/automysqlbackup.conf $DESTDIR/etc/automysqlbackup/
 sudo chown -R root:admin $DESTDIR/etc/automysqlbackup
 sudo chmod 770 $DESTDIR/etc/automysqlbackup
 sudo chmod 760 $DESTDIR/etc/automysqlbackup/automysqlbackup.conf
+
+# Move the mysql-post install script into place
+# Make sure it works first.
+
+# Move the launchd interval script into place, change the permissions
+# Perhaps the RunAtLoad is not needed?
+sudo chown root:wheel /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
+sudo chmod 644 /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
