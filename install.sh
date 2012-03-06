@@ -22,5 +22,6 @@ sudo chmod 760 $DESTDIR/etc/automysqlbackup/automysqlbackup.conf
 
 # Move the launchd interval script into place, change the permissions
 # Perhaps the RunAtLoad is not needed?
+sudo cp $CURRDIR/com.sologroup.automysqlbackup.plist /Library/LaunchDaemons/
 sudo chown root:wheel /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
 sudo chmod 644 /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
