@@ -10,14 +10,12 @@
 	</array>
 	<key>QueueDirectories</key>
 	<array/>
-	<key>RunAtLoad</key>
-	<true/>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
 		<integer>23</integer>
 		<key>Minute</key>
-		<integer>00</integer>
+		<integer>50</integer>
 	</dict>
 	<key>WatchPaths</key>
 	<array/>

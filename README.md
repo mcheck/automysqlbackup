@@ -16,6 +16,9 @@ Installs into
 	/usr/local/bin/automysqlbackup.sh
 	/usr/local/etc/automysqlbackup/automysqlbackup.conf
 
+Set the conf file
+Start the launchd plist running: 
+
 
 Change Log
 ----------
