@@ -14,4 +14,5 @@ sudo chmod +x $DESTDIR/bin/automysqlbackup.sh
 sudo mkdir -p $DESTDIR/etc/automysqlbackup
 sudo cp $CURRDIR/automysqlbackup.conf $DESTDIR/etc/automysqlbackup/
 sudo chown -R root:admin $DESTDIR/etc/automysqlbackup
-sudo chmod -R 770 $DESTDIR/etc/automysqlbackup
+sudo chmod 770 $DESTDIR/etc/automysqlbackup
+sudo chmod 760 $DESTDIR/etc/automysqlbackup/automysqlbackup.conf
