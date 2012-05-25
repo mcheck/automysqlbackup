@@ -39,8 +39,8 @@ Todo
 ----
 Update the mysql-post script to set permissions on the databases, less permissive  
 Add an un-install script  
-Remove the PATH variable from the automysqlbackup.sh and place it in the conf file so as to allow it to be configured
-
+Adjust the PATH var in conf file to what the system has mysql: macports, binary, from source, etc.
+Try to find the solution for the information_schema issue, possible taking out the --opt for mysqldump
 
 
 Change Log
