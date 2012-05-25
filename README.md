@@ -37,7 +37,9 @@ launchd plist is runs daily at 11:50pm
 
 Todo
 ----
-Update the mysql-post script to set permissions on the databases, less permissive
+Update the mysql-post script to set permissions on the databases, less permissive  
+Add an un-install script  
+Remove the PATH variable from the automysqlbackup.sh and place it in the conf file so as to allow it to be configured
 
 
 
