@@ -9,16 +9,21 @@ Run it multiple times and it will overwrite files that are there.
 Install
 -------
 
-Setup a mysql backup user:  
+Setup a mysql backup user:
+
 Grant privileges SHOW DATABASES, SELECT, LOCK TABLES, RELOAD on *.* to 'backup'@'localhost' identified by 'someawesomepassword';
 
 Run the installer, it will ask for sudo password
+
 Installs into
+
 	/usr/local/bin/automysqlbackup.sh
+
 	/usr/local/etc/automysqlbackup/automysqlbackup.conf
 
 Adjust settings in automysqlbackup.conf
-Start the launchd plist running: 
+
+Start the launchd plist running:
 sudo launchctl load /Library/LaunchDaemons/com.sologroup.automysqlbackup.plist
 
 
